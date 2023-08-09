@@ -1,0 +1,26 @@
+.courses-bg {
+  background-color: white;
+  height: max-content;
+}
+.course-list-tile {
+  height: 60px;
+  width: auto;
+  margin-top: 16px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 45px;
+  background-color: #f43e04;
+}
+.course-lists {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.courses-examples {
+  display: flex;
+  margin-top: 53px;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 83px;
+}

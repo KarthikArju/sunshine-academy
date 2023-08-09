@@ -1,0 +1,10 @@
+.client-list-bg {
+    margin-top: 53px;
+  height: 162px;
+  width: auto;
+  display: flex;
+  background-color: #ffddd2;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 141px;
+}
