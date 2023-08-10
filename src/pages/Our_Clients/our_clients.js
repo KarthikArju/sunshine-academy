@@ -9,9 +9,9 @@ function Clients() {
         billing course for medical coding & Medical billing
       </div>
       <div className="client-list-bg">
-        <img src="/assets/client-1.png"></img>
-        <img src="/assets/client-2.png"></img>
-        <img src="/assets/client-3.png"></img>
+        {/* <img src="/assets/client-1.png"></img>
+        <img src="/assets/client-2.png" style={{marginTop:30}}></img>
+        <img src="/assets/client-3.png"></img> */}
       </div>
     </section>
   );

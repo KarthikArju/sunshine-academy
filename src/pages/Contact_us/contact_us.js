@@ -1,7 +1,8 @@
+import { forwardRef } from "react";
 import "../Contact_us/contact_us.css";
-function ContactUs() {
+const ContactUs=forwardRef((props,ref)=> {
   return (
-    <section className="about-us-bg">
+    <section className="about-us-bg" ref={ref}> 
       <div className="heading-text-style">Contact Us</div>
       <div className="sub-heading-style">
         We offered industries leading course for medical coding & Medical
@@ -35,5 +36,5 @@ function ContactUs() {
      
     </section>
   );
-}
+});
 export default ContactUs;

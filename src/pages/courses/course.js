@@ -1,12 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import "../courses/course.css";
-import { React, useState } from "react";
-function Course() {
+import { React, forwardRef, useState } from "react";
+const Course = forwardRef((props, ref) => {
+  const navigate = useNavigate();
   const [selectedCource, setCourse] = useState(0);
-  function couseSelected(index){
-            setCourse(index);
+  function couseSelected(index) {
+    setCourse(index);
   }
   return (
-    <section className="courses-bg">
+    <section className="courses-bg" ref={ref}>
       <div className="heading-text-style">Course offered</div>
       <div className="sub-heading-style">
         We offered industries leading course for medical coding & Medical
@@ -33,7 +35,7 @@ function Course() {
                     paddingLeft: 20,
                     paddingRight: 20,
                   }}
-                  onClick={()=>couseSelected(i)}
+                  onClick={() => couseSelected(i)}
                 >
                   {i == 0
                     ? "CMC"
@@ -49,17 +51,33 @@ function Course() {
             }
             return contents;
           })()}
-          
         </div>
-        
-        
       </div>
       <div className="courses-examples">
-            <div><img src="/assets/doctor.png" ></img></div>
-            <div><img src="/assets/stethes.png"></img></div>
-            <div><img src="/assets/medical-book.png"></img></div>
+        <div>
+          <img
+            src="/assets/doctor.png"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+            onClick={() => navigate("/course-detail", { state: { type: 1 } })}
+          ></img>
         </div>
+        <div>
+          <img
+            src="/assets/stethes.png"
+            onClick={() => navigate("/course-detail", { state: { type: 2 } })}
+          ></img>
+        </div>
+        <div>
+          <img
+            src="/assets/medical-book.png"
+            onClick={() => navigate("/course-detail", { state: { type: 3 } })}
+          ></img>
+        </div>
+      </div>
     </section>
   );
-}
+});
 export default Course;

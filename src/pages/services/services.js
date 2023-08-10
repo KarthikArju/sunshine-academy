@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import "../services/services.css";
 
-function services() {
+const Services=forwardRef((props,ref)=> {
   return (
-    <section className="services-bg">
+    <section className="services-bg" ref={ref}> 
       <div className="heading-text-style">Our Featured Service</div>
       <div className="sub-heading-style">
         Provides training and equips them with sound knowledgein all domain and
@@ -231,5 +232,5 @@ function services() {
       </div>
     </section>
   );
-}
-export default services;
+});
+export default Services;

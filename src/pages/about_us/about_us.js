@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import "../about_us/about_us.css";
 
-function AboutUs() {
+const AboutUs=forwardRef((props,ref) =>{
   return (
-    <section className="about-us-bg">
+    <section className="about-us-bg" ref={ref}>
       <div className="heading-text-style">About Us</div>
       <div className="sub-heading-style">
         We offered industries leading course for medical coding & Medical
@@ -18,5 +19,5 @@ function AboutUs() {
         </div>
     </section>
   );
-}
+});
 export default AboutUs;
