@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/KarthikArju/sunshine-academy/static/css/main.b8194cce.css",
+    "main.js": "/KarthikArju/sunshine-academy/static/js/main.e525926c.js",
+    "static/js/787.584bd902.chunk.js": "/KarthikArju/sunshine-academy/static/js/787.584bd902.chunk.js",
+    "static/media/clients.png": "/KarthikArju/sunshine-academy/static/media/clients.be58f5193a017da65c5d.png",
+    "index.html": "/KarthikArju/sunshine-academy/index.html",
+    "main.b8194cce.css.map": "/KarthikArju/sunshine-academy/static/css/main.b8194cce.css.map",
+    "main.e525926c.js.map": "/KarthikArju/sunshine-academy/static/js/main.e525926c.js.map",
+    "787.584bd902.chunk.js.map": "/KarthikArju/sunshine-academy/static/js/787.584bd902.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8194cce.css",
+    "static/js/main.e525926c.js"
+  ]
+}
